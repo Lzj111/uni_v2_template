@@ -1,0 +1,63 @@
+/**
+ * @description 全局通用css样式,各个组件引入后调用
+ * @author lzj
+ * @date 2023/06/05
+ */
+
+/* 引入uni-app内置的常用样式变量 */
+@import '~@/uni.scss';
+
+/* 文本单行省略号 */
+.text_ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 文本双行省略号 */
+.text_two_ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* flex全部居中 */
+.flex_center_all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* flex 横向居中 */
+.flex_center_row {
+    display: flex;
+    justify-content: center;
+}
+
+/* flex 纵向居中 */
+.flex_center_column {
+    display: flex;
+    align-items: center;
+}
+
+/* flex 两端&横纵向居中&两端对齐 */
+.flex_between {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.z_index_10 {
+    z-index: 10;
+}
+
+.z_index_20 {
+    z-index: 20;
+}
+
+.z_index_30 {
+    z-index: 30;
+}
